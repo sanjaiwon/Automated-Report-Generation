@@ -1,0 +1,41 @@
+# Step 1: Manual Sales Data (No CSV)
+products = [
+    {"Product": "Laptop", "Units Sold": 50, "Revenue": 250000},
+    {"Product": "Mobile", "Units Sold": 150, "Revenue": 300000},
+    {"Product": "Headphones", "Units Sold": 200, "Revenue": 100000}
+]
+
+# Step 2: Analyze Data
+total_units = sum(item["Units Sold"] for item in products)
+total_revenue = sum(item["Revenue"] for item in products)
+top_product = max(products, key=lambda x: x["Revenue"])["Product"]
+
+# Step 3: Print Report to Output
+print("="*50)
+print("           SALES PERFORMANCE REPORT")
+print("="*50)
+print("Intern: Sanjai Krishnan S")
+print("College: Rajalakshmi Institute of Technology")
+print("Company: Codetech IT Solutions")
+print("Task 2: Automated Report Generation")
+print()
+
+print("Project Overview:")
+print("This project demonstrates how to generate reports from structured data using Python. "
+      "The report analyzes sales performance and presents insights including total units sold, "
+      "total revenue, and the top-performing product.")
+print()
+
+print("Summary:")
+print(f"- Total Units Sold: {total_units}")
+print(f"- Total Revenue: Rs.{total_revenue}")
+print(f"- Top Product: {top_product}")
+print()
+
+print("Product Breakdown:")
+for item in products:
+    print(f"- {item['Product']}: {item['Units Sold']} units | Rs.{item['Revenue']} revenue")
+
+print()
+print("Thank you for reviewing this report.")
+print("Submitted by: Sanjai Krishnan S | Rajalakshmi Institute of Technology | Codetech IT Solutions")
