@@ -80,4 +80,4 @@ Upon exiting, the chatbot prints a thank-you message along with credits to the i
 
 *OUTPUT*:
 
-
+<img width="1024" height="1536" alt="Image" src="https://github.com/user-attachments/assets/17a0d302-093e-425c-b741-e3eb4c189526" />
